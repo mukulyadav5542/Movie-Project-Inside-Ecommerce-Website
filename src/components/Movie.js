@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './Movie.module.css';
 
 const Movie = (props) => {
-  console.log(props, "Movies");
+  console.log(props);
   return (
     <li className={classes.movie} key={props.id}>
       <h2>{props.title}</h2>

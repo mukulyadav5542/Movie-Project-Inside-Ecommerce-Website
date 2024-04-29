@@ -89,14 +89,14 @@ function App() {
 
   async function deleteMovieHandler(id) {
     console.log(id, "id");
-    // const response = await fetch(`https://react-http-997d5-default-rtdb.firebaseio.com/movies.json/${id}`, {
-    //   method: 'DELETE',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   }
-    // });
-    // const data = await response.json();
-    // console.log(data);
+    const response = await fetch(`https://react-http-997d5-default-rtdb.firebaseio.com/movies.json`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+    const data = await response.json();
+    console.log(data);
   }  
 
   let content = <p>Found no movies.</p>;
